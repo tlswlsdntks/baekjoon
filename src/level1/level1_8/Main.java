@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int year;
+        long year;
         do {
             year = scanner.nextInt();
-        } while (1000 > year || year > 3000);
+        } while (1_000 > year || year > 3_000);
         System.out.println(year -= 2541 % 1998);
     }
 }
