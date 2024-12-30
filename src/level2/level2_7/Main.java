@@ -1,17 +1,20 @@
 package level2.level2_7;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        long[] dices = getDices();
-        for (long dice : dices) {
-            System.out.println("dice = " + dice);
+        long count = 0, target = 0, max = 0;
+        for (long i = 0; i < getDices().length; i++) {
+            if (max < i) {
+                max = i;
+            }
+            if (target == i) {
+                count++;
+            }
+            target = i;
         }
-
-        getPrice(2, 3, 6);
+        getPrice(count, target, max);
     }
 
     private static long[] getDices() {
@@ -19,6 +22,9 @@ public class Main {
     }
 
     private static void getPrice(long count, long target, long max) {
+        System.out.println("count = " + count);
+        System.out.println("target = " + target);
+        System.out.println("max = " + max);
         switch ((int) count) {
             case 3:
                 System.out.println(10_000 + (target) * 1_000);
