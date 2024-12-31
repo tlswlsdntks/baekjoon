@@ -8,9 +8,13 @@ public class Main {
          * 첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.
          */
         Scanner scanner = new Scanner(System.in);
-        long n;
+        int n;
         do {
             n = scanner.nextInt();
         } while (1 > n || n > 10_000);
+
+        for (int i = 1; i < n; i++) {
+
+        }
     }
 }
