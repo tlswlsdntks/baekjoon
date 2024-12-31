@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long h, m;
+        int h, m;
         do {
-            h = scanner.nextLong();
-            m = scanner.nextLong();
+            h = scanner.nextInt();
+            m = scanner.nextInt();
         } while ((0 > h || h > 23) || (0 > m || m > 59));
 
         m -= 45;

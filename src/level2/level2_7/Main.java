@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long[] dices = {scanner.nextLong(), scanner.nextLong(), scanner.nextLong()};
+        int[] dices = {scanner.nextInt(), scanner.nextInt(), scanner.nextInt()};
         if (dices[0] == dices[1] && dices[1] == dices[2]) {
             System.out.println(10_000 + (dices[1]) * 1_000);
         } else if (dices[0] == dices[1] || dices[0] == dices[2]) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long a, b, c;
+        int a, b, c;
         do {
             a = scanner.nextInt();
             b = scanner.nextInt();

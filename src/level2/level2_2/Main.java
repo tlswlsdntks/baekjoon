@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long grade;
+        int grade;
         do {
-            grade = scanner.nextLong();
+            grade = scanner.nextInt();
         } while (0 > grade || grade > 100);
         if (grade >= 90) {
             System.out.println("A");

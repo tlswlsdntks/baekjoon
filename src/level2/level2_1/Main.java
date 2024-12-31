@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long a, b;
+        int a, b;
         do {
-            a = scanner.nextLong();
-            b = scanner.nextLong();
+            a = scanner.nextInt();
+            b = scanner.nextInt();
         } while ((-10_000 > a || a > 10_000) || (-10_000 > b || b > 10_000));
         if (a > b) {
             System.out.println(">");

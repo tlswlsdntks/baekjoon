@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long x, y;
+        int x, y;
         do {
-            x = scanner.nextLong();
-            y = scanner.nextLong();
+            x = scanner.nextInt();
+            y = scanner.nextInt();
         } while ((-1_000 > x || x > 1_000 || x == 0) || (-1_000 > y || y > 1_000 || y == 0));
 
         if (isPositiveNumber(x) && isPositiveNumber(y)) {
@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-    static boolean isPositiveNumber(long number) {
+    static boolean isPositiveNumber(int number) {
         return 0 < number;
     }
 }

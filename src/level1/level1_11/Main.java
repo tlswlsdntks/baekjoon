@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long a, b, c;
-        long pow = (long) Math.pow(10, 12);
+        int a, b, c;
+        int pow = (int) Math.pow(10, 12);
         do {
-            a = scanner.nextLong();
-            b = scanner.nextLong();
-            c = scanner.nextLong();
+            a = scanner.nextInt();
+            b = scanner.nextInt();
+            c = scanner.nextInt();
         } while ((1 > a || a > pow) || (1 > b || b > pow) || (1 > c || c > pow));
         System.out.println(a + b + c);
     }

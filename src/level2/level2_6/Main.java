@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        long a, b, c;
+        int a, b, c;
         do {
-            a = scanner.nextLong();
-            b = scanner.nextLong();
-            c = scanner.nextLong();
+            a = scanner.nextInt();
+            b = scanner.nextInt();
+            c = scanner.nextInt();
         } while ((0 > a || a > 23) || (0 > b || b > 59) || (0 > c || c > 1_000));
 
         b += c;
