@@ -4,17 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /**
-         * 첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.
-         */
         Scanner scanner = new Scanner(System.in);
-        int n;
+        int n, sum = 0;
         do {
             n = scanner.nextInt();
         } while (1 > n || n > 10_000);
 
-        for (int i = 1; i < n; i++) {
-
+        for (int i = 1; i <= n; i++) {
+            sum += i;
         }
+        System.out.println(sum);
     }
 }
