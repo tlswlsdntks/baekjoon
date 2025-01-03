@@ -1,4 +1,4 @@
-package level3.level3_7;
+package level3.level3_8;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -14,7 +14,7 @@ public class Main {
             a = Integer.parseInt(stringTokenizer.nextToken());
             b = Integer.parseInt(stringTokenizer.nextToken());
             if (0 < a && b < 10) {
-                bufferedWriter.write("Case #" + ++c + ": " + (a + b) + "\n");
+                bufferedWriter.write("Case #" + ++c + ": " + a + " + " + b + " = " + (a + b) + "\n");
             }
         }
         bufferedWriter.flush();
