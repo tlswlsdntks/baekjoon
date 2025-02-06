@@ -1,4 +1,4 @@
-package level3.level3_11;
+package level3.level3_12;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -10,8 +10,9 @@ public class Main {
 
         int a, b;
         boolean c = true;
-        while (c) {
-            StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
+        String d;
+        while (c && (d = bufferedReader.readLine()) != null) {
+            StringTokenizer stringTokenizer = new StringTokenizer(d);
             a = Integer.parseInt(stringTokenizer.nextToken());
             b = Integer.parseInt(stringTokenizer.nextToken());
             if (a <= 0 && b >= 10) {
