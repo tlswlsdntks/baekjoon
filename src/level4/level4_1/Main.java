@@ -26,8 +26,8 @@ public class Main {
                 continue;
             }
 
-            for (int i = 0; i < e.length; i++) {
-                if (c == e[i]) {
+            for (int i : e) {
+                if (c == i) {
                     d++;
                 }
             }
