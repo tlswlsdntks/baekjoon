@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer stringTokenizer, tokenizer;
+        StringTokenizer stringTokenizer;
 
 
         boolean d = true;
@@ -20,13 +20,13 @@ public class Main {
             }
 
             int[] c = new int[a];
-            tokenizer = new StringTokenizer(bufferedReader.readLine());
+            stringTokenizer = new StringTokenizer(bufferedReader.readLine());
             for (int i = 0; i < c.length; i++) {
-                c[i] = Integer.parseInt(tokenizer.nextToken());
+                c[i] = Integer.parseInt(stringTokenizer.nextToken());
             }
 
             for (int i : c) {
-                if (b > i) {
+                if (i < b) {
                     bufferedWriter.write(i + " ");
                 }
             }
