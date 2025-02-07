@@ -1,7 +1,6 @@
-package level4.level4_5;
+package level4.level4_6;
 
 import java.io.*;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -12,30 +11,31 @@ public class Main {
 
         int a, b;
         boolean c = true;
-        int[] d;
         while (c) {
             stringTokenizer = new StringTokenizer(bufferedReader.readLine());
             a = Integer.parseInt(stringTokenizer.nextToken());
             b = Integer.parseInt(stringTokenizer.nextToken());
 
             if ((1 > a || a > 100) || (1 > b || b > 100)) {
-                continue;
+              continue;
             }
 
-            d = new int[a];
+            int[] d = new int[a];
+            for (int i = 0; i < d.length; i++) {
+                d[i] = i + 1;
+            }
+
             for (int i = 0; i < b; i++) {
                 stringTokenizer = new StringTokenizer(bufferedReader.readLine());
                 int f = Integer.parseInt(stringTokenizer.nextToken());
                 int l = Integer.parseInt(stringTokenizer.nextToken());
-                int n = Integer.parseInt(stringTokenizer.nextToken());
-                if ((1 > f || f > a) || (1 > l || l > a) || (1 > n || n > a)) {
+                if ((1 > f || f > a) || 1 > l || l > a) {
                     i--;
                 } else {
-                    f -= 1;
-                    l -= 1;
-                    for (int j = f; j <= l; j++) {
-                        d[j] = n;
-                    }
+                    int temp;
+                    temp = d[f - 1];
+                    d[f - 1] = d[l - 1];
+                    d[l - 1] = temp;
                 }
             }
 
